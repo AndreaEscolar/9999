@@ -1,0 +1,10 @@
+type GreetingProps = {
+    name: string
+}
+
+
+function Greeting({name}: GreetingProps) {
+    return <h1>Benvingut/da, { name }!</h1>
+}
+
+export default Greeting
