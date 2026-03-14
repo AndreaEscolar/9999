@@ -3,6 +3,7 @@ import "./App.css";
 
 import Greeting from "./exercises/ra1/block1/ex1-greeting/Greeting";
 import UserInfo from "./exercises/ra1/block1/ex2-user-info/UserInfo";
+import Avatar from "./exercises/ra1/block1/ex3-avatar/Avatar";
 
 // ====== Tipos ======
 type View = "home" | "block" | "exercise" | "miniapp";
@@ -40,6 +41,22 @@ const exercisesByBlock: Record<BlockKey, ExerciseItem[]> = {
         />
       ),
     },
+    {
+      id: "avatar",
+      title: "Avatar",
+      component: (
+        <>
+          <Avatar
+            src="https://api.dicebear.com/9.x/adventurer/svg?seed=Caleb"
+            alt="Caleb Celeb"
+            size={70}
+          />
+          <Avatar
+            alt="Alicia Daganzo"
+          />
+        </>
+      ),
+    }
   ],
   "ej1-block2": [],
   "ej1-block3": [],
