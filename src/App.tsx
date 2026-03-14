@@ -4,6 +4,16 @@ import "./App.css";
 import Greeting from "./exercises/ra1/block1/ex1-greeting/Greeting";
 import UserInfo from "./exercises/ra1/block1/ex2-user-info/UserInfo";
 import Avatar from "./exercises/ra1/block1/ex3-avatar/Avatar";
+import { TaskList } from "./exercises/ra1/block1/ex4-task-list/TaskList";
+
+
+// ====== Datos Prueba ======
+const tasks = [
+  { id: 1, title: "Aprender React", completed: false },
+  { id: 2, title: "Practicar", completed: true },
+  { id: 3, title: "Crear una Card", completed: false }
+]
+
 
 // ====== Tipos ======
 type View = "home" | "block" | "exercise" | "miniapp";
@@ -56,7 +66,16 @@ const exercisesByBlock: Record<BlockKey, ExerciseItem[]> = {
           />
         </>
       ),
-    }
+    },
+    {
+      id: "tasklist",
+      title: "Task List simple",
+      component: (
+        <>
+          <TaskList tasks={tasks}/>
+        </>
+      ),
+    },
   ],
   "ej1-block2": [],
   "ej1-block3": [],
