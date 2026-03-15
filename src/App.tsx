@@ -5,7 +5,7 @@ import Greeting from "./exercises/ra1/block1/ex1-greeting/Greeting";
 import UserInfo from "./exercises/ra1/block1/ex2-user-info/UserInfo";
 import Avatar from "./exercises/ra1/block1/ex3-avatar/Avatar";
 import { TaskList } from "./exercises/ra1/block1/ex4-task-list/TaskList";
-
+import { Card, CardHeader,CardBody,CardFooter } from "./exercises/ra1/block1/ex5-card-composition";
 
 // ====== Datos Prueba ======
 const tasks = [
@@ -76,6 +76,23 @@ const exercisesByBlock: Record<BlockKey, ExerciseItem[]> = {
         </>
       ),
     },
+    {
+      id: "card",
+      title: "Card",
+      component: (
+        <>
+        <Card>
+          <CardHeader title="Producte" subtitle="Descripció breu" />
+          <CardBody>
+            <p>Contingut del producte</p>
+          </CardBody>
+          <CardFooter>
+            <button>Comprar</button>
+          </CardFooter>
+        </Card>
+        </>
+      )
+    }
   ],
   "ej1-block2": [],
   "ej1-block3": [],
