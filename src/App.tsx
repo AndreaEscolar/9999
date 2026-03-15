@@ -5,7 +5,7 @@ import Greeting from "./exercises/ra1/block1/ex1-greeting/Greeting";
 import UserInfo from "./exercises/ra1/block1/ex2-user-info/UserInfo";
 import Avatar from "./exercises/ra1/block1/ex3-avatar/Avatar";
 import { TaskList } from "./exercises/ra1/block1/ex4-task-list/TaskList";
-import { Card, CardHeader,CardBody,CardFooter } from "./exercises/ra1/block1/ex5-card-composition";
+import { Card, CardHeader, CardBody, CardFooter } from "@/exercises/ra1/block1/ex5-card-composition";
 
 // ====== Datos Prueba ======
 const tasks = [
